@@ -1,0 +1,13 @@
+{
+    "name":"Landing Page",
+    "webElements":[
+        {
+            "elementName": "allFunctionList",
+            "selectorValue": "//div[@id='content']//li"
+        },
+        {
+            "elementName": "getFunction",
+            "selectorValue": "//div[@id='content']//li[placeholder]"
+        }
+    ]
+}

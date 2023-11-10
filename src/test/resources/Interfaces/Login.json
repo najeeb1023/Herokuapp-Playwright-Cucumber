@@ -1,9 +1,0 @@
-{
-    "name":"Login Page",
-    "webelement":[
-        {
-            "name": "sigin",
-            "webelement": "//a[normalize-space()='Sign in']"
-        }
-    ]
-}
