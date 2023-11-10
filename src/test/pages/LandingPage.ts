@@ -13,11 +13,11 @@ export class LandingPage{
     public async goToLandingPage():Promise<any>{
         await pageFixture.page.goto('https://the-internet.herokuapp.com/')
     }
-    public async checkSelectedFunction():Promise<any>{
+    public async checkSelectedFunction(getFunction: string):Promise<any>{
         const numberOfFunctions = await this.landingPageLocators.functionList().count();
         for(let i=1;i<=numberOfFunctions;i++){
             const el = await pageFixture.page.locator(getResource('getFunction').selectorValue.replace('placeholder', i.toString()));
-            const arr = [el.getByText('Broken Images').click()];
+            const arr = [el.getByText(getFunction).click()];
             console.log(arr);
         }
     }

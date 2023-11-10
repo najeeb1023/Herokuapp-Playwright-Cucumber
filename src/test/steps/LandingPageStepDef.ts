@@ -13,7 +13,7 @@ When('User goes through the web functions', async function (){
     console.log('Function running.')
 });
 
-Then('User is able to select one', async function (){
+Then('User is able to select {string}', async function (getFunction){
     let landingPage = new LandingPage(pageFixture.page);
-    await landingPage.checkSelectedFunction();
+    await landingPage.checkSelectedFunction(getFunction);
 });
