@@ -5,4 +5,8 @@ Background: Landing Page
 
 Scenario: User is able to enter a correct credentials 
   When User goes through the web functions
-  Then User is able to select one
+  Then User is able to select "<FUNCTION>"
+  
+  Examples:
+        |  FUNCTION   |
+        |  Checkboxes     |
