@@ -9,25 +9,25 @@ function getResource(resourceName : string){
 }
 
 export class AbTesting{
-    AbTesingPageLocators ={
+    abTesingPageLocators ={
        abTestingField:() => pageFixture.page.locator(getResource('getAbTesting').selectorValue),
        headingTextLocator:()=> pageFixture.page.locator(getResource('getHeading').selectorValue)
     }
 
 
 public async goToLandingPage():Promise<any>{
-    await pageFixture.page.goto('https://the-internet.herokuapp.com/')
+    await pageFixture.page.goto('https://the-internet.herokuapp.com/');
 
 }
 
     
     public async assertText():Promise<any>{
-     await this.AbTesingPageLocators.abTestingField().click()
+     await this.abTesingPageLocators.abTestingField().click();
      //await expect(pageFixture.page.locator('.heading1')).toHaveText("A/B Test Control")
     
     }
     public async getHeading():Promise<any>{
-       const heading = await this.AbTesingPageLocators.headingTextLocator();
+       const heading = await this.abTesingPageLocators.headingTextLocator();
        console.log(await heading.textContent());
     }
 
