@@ -27,8 +27,8 @@ public async goToLandingPage():Promise<any>{
     
     }
     public async getHeading():Promise<any>{
-       const headingText = await this.AbTesingPageLocators.headingTextLocator();
-       console.log(await headingText.textContent());
+       const heading = await this.AbTesingPageLocators.headingTextLocator();
+       console.log(await heading.textContent());
     }
 
 constructor(public page: Page){
