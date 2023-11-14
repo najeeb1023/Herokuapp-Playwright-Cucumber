@@ -1,0 +1,13 @@
+{
+    "name": "Frames Page",
+    "webElements": [
+        {
+            "elementName": "getFrameFunctions",
+            "selectorValue": "//div[@id='content']//li"
+        },
+        {
+            "elementName": "rightFrame",
+            "selectorValue": "//frameset[@name='frameset-middle']//frame[@name='frame-right']"
+        }
+    ]
+}
