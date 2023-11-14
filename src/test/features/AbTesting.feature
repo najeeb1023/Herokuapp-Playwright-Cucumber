@@ -6,3 +6,4 @@ Background: Landing Page
 
  Scenario: User is able to click on testing 
   When User is able to select AbTestings
+  And User is able to get text

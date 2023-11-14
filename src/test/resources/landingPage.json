@@ -16,7 +16,7 @@
         },
         {
            "elementName": "getHeading",
-           "selectorValue":"div[class='example'] h3"
+           "selectorValue":"div[class='example'] p"
         }
     ]
 }

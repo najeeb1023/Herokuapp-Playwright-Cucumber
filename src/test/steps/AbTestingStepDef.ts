@@ -15,4 +15,11 @@ When('User is able to select AbTestings', async function() {
     await abTesting.assertText();
 })
 
+Then('User is able to get text',async function() {
+    let asertText = new AbTesting(pageFixture.page)
+    await asertText.getHeading();
+    
+})
+
+
     

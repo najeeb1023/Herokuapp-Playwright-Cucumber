@@ -11,7 +11,7 @@ function getResource(resourceName : string){
 export class AbTesting{
     AbTesingPageLocators ={
        abTestingField:() => pageFixture.page.locator(getResource('getAbTesting').selectorValue),
-       heagingTextLocator:()=> pageFixture.page.locator(getResource('').selectorValue)
+       headingTextLocator:()=> pageFixture.page.locator(getResource('getHeading').selectorValue)
     }
 
 
@@ -26,8 +26,9 @@ public async goToLandingPage():Promise<any>{
      //await expect(pageFixture.page.locator('.heading1')).toHaveText("A/B Test Control")
     
     }
-    public async getText():Promise<any>{
-        await this.AbTesingPageLocators.heagingTextLocator().getByText('Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through).')
+    public async getHeading():Promise<any>{
+       const headingText = await this.AbTesingPageLocators.headingTextLocator();
+       console.log(await headingText.textContent());
     }
 
 constructor(public page: Page){
