@@ -6,7 +6,8 @@ Background: Landing Page
 Scenario: User is able to enter a correct credentials 
   When User goes through the web functions
   Then User is able to select "<FUNCTION>"
+  Then User is able to get Data
   
   Examples:
         |  FUNCTION   |
-        |  Challenging DOM     |
+        |  Sortable Data Tables     |
