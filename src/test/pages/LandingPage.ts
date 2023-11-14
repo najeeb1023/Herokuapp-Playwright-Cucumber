@@ -14,12 +14,7 @@ export class LandingPage{
         await pageFixture.page.goto('https://the-internet.herokuapp.com/')
     }
     public async checkSelectedFunction(getFunction):Promise<any>{
-        const numberOfFunctions = await this.landingPageLocators.functionList().count();
-        for(let i=1;i<=numberOfFunctions;i++){
-            const el = await pageFixture.page.locator(getResource('getFunction').selectorValue.replace('placeholder', i.toString()));
-            const arr = [el.getByText(getFunction).click()];
-            console.log(arr);
-        }
+        await pageFixture.page.locator("//div[@id='content']//ul//li[contains(., '"+getFunction+"')]/a").click();
     }
     constructor(public page: Page){
         this.page = page;
