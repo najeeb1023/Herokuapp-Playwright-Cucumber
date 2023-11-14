@@ -9,4 +9,4 @@ Scenario: User is able to enter a correct credentials
   
   Examples:
         |  FUNCTION   |
-        |  Checkboxes     |
+        |  Challenging DOM     |
