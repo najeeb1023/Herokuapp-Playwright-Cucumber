@@ -8,6 +8,15 @@
         {
             "elementName": "getFunction",
             "selectorValue": "//div[@id='content']//li[placeholder]"
+        },
+
+        {
+            "elementName": "getAbTesting",
+            "selectorValue":"a[href='/abtest']"
+        },
+        {
+           "elementName": "getHeading",
+           "selectorValue":"div[class='example'] p"
         }
     ]
 }
