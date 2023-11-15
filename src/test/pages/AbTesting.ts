@@ -1,6 +1,6 @@
 import {expect ,Page} from "@playwright/test"
 import { pageFixture } from "../hooks/pageFixture"
-import { PageElement } from "../resources/Interfaces/iPagesElelment"
+import { PageElement } from "../resources/Interfaces/iPagesElement"
 import * as landingPageLocators from "../resources/landingPage.json"
 
 function getResource(resourceName : string){
