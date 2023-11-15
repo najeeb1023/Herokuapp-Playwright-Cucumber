@@ -10,7 +10,8 @@ Given('User visit the website' , async function () {
 
 });
 
-When('User is able to select AbTestings', async function() {
+
+When('User is able to select', async function() {
     let abTesting = new AbTesting(pageFixture.page)
     await abTesting.assertText();
 })

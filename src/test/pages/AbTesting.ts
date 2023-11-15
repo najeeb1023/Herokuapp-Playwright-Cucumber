@@ -19,6 +19,9 @@ public async goToLandingPage():Promise<any>{
     await pageFixture.page.goto('https://the-internet.herokuapp.com/');
 
 }
+public async checkSelectedFunction(getFunction):Promise<any>{
+    await pageFixture.page.locator("//div[@id='content']//ul//li[contains(., '"+getFunction+"')]/a").click();
+}
 
     
     public async assertText():Promise<any>{

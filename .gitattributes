@@ -8,4 +8,4 @@
 # So, the following three lines are all functionally equivalent:
 *.html linguist-language=ts
 *.html linguist-language=TS
-*.html linguist-language=TYPESCRIPT
+*.html linguist-language=Typescript
