@@ -1,3 +1,4 @@
+@RandomFunction
 Feature: Tool Shop 
 
 Background: Landing Page 
