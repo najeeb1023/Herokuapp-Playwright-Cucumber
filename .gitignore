@@ -3,3 +3,4 @@ node_modules/
 /playwright/.cache/
 /videos
 /test-result
+.gitattributes
