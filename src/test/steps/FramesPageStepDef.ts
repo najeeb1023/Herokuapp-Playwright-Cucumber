@@ -1,4 +1,4 @@
-import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
+import { When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { Frames } from "../pages/FramesPage";
 import { pageFixture } from "../hooks/pageFixture";
 
