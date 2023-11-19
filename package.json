@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test --tags=@abTesting"
+    "test": "cucumber-js test --format cucumber-console-formatter"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
@@ -12,6 +12,7 @@
     "@types/node": "^20.9.0"
   },
   "dependencies": {
+    "cucumber-console-formatter": "^1.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

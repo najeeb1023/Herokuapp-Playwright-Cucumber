@@ -15,17 +15,18 @@ export class LandingPage{
         await pageFixture.page.goto('https://the-internet.herokuapp.com/');
     }
 
-    public async checkSelectedFunction(getFunction):Promise<any>{
+    public async checkSelectedFunction(getFunction: string):Promise<any>{
         await pageFixture.page.locator("//div[@id='content']//ul//li[contains(., '"+getFunction+"')]/a").click();
     }
 
     public async sortTable():Promise<any>{
         const dataElements = await pageFixture.page.locator("//table[@id='table2']//tbody//tr").count();
-        await console.log(dataElements)
+        console.log("Number of users found: " + dataElements)
         for(let i=1;i<=dataElements;i++){
-        const getLastName = await pageFixture.page.locator("//table[@id='table2']//tbody//tr[placeholder]//td[3]".replace('placeholder', i.toString()));
-        console.log(await getLastName.textContent());
+        const getLastName = await pageFixture.page.locator("//table[@id='table2']//tbody//tr[placeholder]//td[3]".replace('placeholder', i.toString())).textContent();
+        process.stdout.write(`${getLastName}` + "| ")
         }
+        
     }
     constructor(public page: Page){
         this.page = page;
