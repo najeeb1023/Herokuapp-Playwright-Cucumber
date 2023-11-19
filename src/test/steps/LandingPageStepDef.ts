@@ -21,4 +21,4 @@ Then('User is able to select {string}', async function (getFunction: string){
 Then('User is able to get Data', async function (){
     let landingPage = new LandingPage(pageFixture.page);
     await landingPage.sortTable();
-})
+});
