@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test --format cucumber-console-formatter"
+    "hero": "cucumber-js test --format cucumber-console-formatter"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",

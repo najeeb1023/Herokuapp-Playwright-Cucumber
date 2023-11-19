@@ -14,7 +14,7 @@ export class Frames {
         rightFrame:() => pageFixture.page.locator(getResource('rightFrame').selectorValue)
     }
     
-    public async checkSelectedFunction(getFunction):Promise<any>{
+    public async checkSelectedFunction(getFunction: string):Promise<any>{
         await pageFixture.page.locator("//div[@id='content']//ul//li[contains(., '"+getFunction+"')]/a").click();
     }
 
