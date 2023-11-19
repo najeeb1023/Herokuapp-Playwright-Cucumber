@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hero": "cucumber-js test --format cucumber-console-formatter --tags=@Redirect"
+    "hero": "cucumber-js test --format cucumber-console-formatter"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
