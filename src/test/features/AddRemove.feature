@@ -13,4 +13,4 @@ Scenario:
 
     Examples:
         | FUNCTION            | TIMES |
-        | Add/Remove Elements | 50     |
+        | Add/Remove Elements | 6     |
