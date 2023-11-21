@@ -8,9 +8,9 @@ Background: User is able to add and remove some elements from the elements funct
 
 Scenario:
     When User enters "<FUNCTION>"
-    And Clicks Add Element option
-    Then Element is added
+    And User clicks Add Element option <TIMES> times
+    Then <TIMES> element are added
 
     Examples:
-        | FUNCTION  |
-        | Add/Remove Elements |
+        | FUNCTION            | TIMES |
+        | Add/Remove Elements | 50     |

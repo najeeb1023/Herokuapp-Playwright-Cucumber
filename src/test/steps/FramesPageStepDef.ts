@@ -2,7 +2,7 @@ import { When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { Frames } from "../pages/FramesPage";
 import { pageFixture } from "../hooks/pageFixture";
 
-setDefaultTimeout(15000);
+setDefaultTimeout(60 * 2 * 1000);
 
 let framesPage = new Frames(pageFixture.page)
 

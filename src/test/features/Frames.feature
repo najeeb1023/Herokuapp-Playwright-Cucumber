@@ -10,5 +10,5 @@ Scenario: User is able to enter a correct credentials
   Then User goes to Nested Frames
   
   Examples:
-        |  FUNCTION   |
-        |  Nested Frames     |
+    |  FUNCTION   |
+    |  Nested Frames     |
